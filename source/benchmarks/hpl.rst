@@ -25,6 +25,6 @@ There is no minimum run time associated with HPL.
 - HPL input file (``HPL.dat``) saved to a file ``cert-{N}-hpl.input``
 - The script (or commands) used to run HPL saved to a file ``cert-{N}-hpl.run``
 - HPL run timestamps saved to a file ``cert-{N}-hpl.tstamps``
-- `Run configurations <https://scc25-benchmarking.readthedocs.io/en/latest/benchmarks/general.html#configuration-file-description>`_ saved to a file ``cert-{N}-configuration.txt``
+- `Run configurations <https://scc26-benchmarking.readthedocs.io/en/latest/benchmarks/general.html#configuration-file-description>`_ saved to a file ``cert-{N}-configuration.txt``
 
 
