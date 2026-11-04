@@ -32,7 +32,7 @@ rst_epilog += '.. |project_lower| replace:: %s\n' % project_lower
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["sphinx_rtd_theme", "sphinx.ext.autosectionlabel"]
+extensions = ["sphinx_rtd_theme", "sphinx.ext.autosectionlabel", "sphinx_design"]
 
 # Make sure the target is unique
 autosectionlabel_prefix_document = True

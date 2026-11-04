@@ -6,7 +6,7 @@ A hardware certification submission consists of a team:
 1. Configuring their cluster hardware as they see fit.
 2. Running HPL, HPL-MXP, and MLPerf Llama2-70B LoRA in succession (in any order), following the rules noted below for each, and receiving valid results that do not violate the 10kW compute power limit for the entirety of benchmark runs and any time in between. *Note that for SCC26, there is no per-node power limit, but it is expected that HPL and HPL-MXP will be run on multiple nodes.* For each benchmark, the team should capture:
 
-   - Timestamps immediately before and after the run, in a file named like ``cert-${NUMBER}-${BENCHMARK}.tstamps``.  Here, ``${NUMBER}`` corresponds to the team’s current hardware certification attempt (i.e. ``1``, ``2``, ``3``, ``4``, or ``5``), and ``${BENCHMARK}`` is one of ``hpl``, ``mxphpl``, or ``mlperf`` (e.g. ``cert-1-hpl.tstamps``). Teams can capture these timestamps by running:
+   - Timestamps immediately before and after the run, in a file named like ``cert-${NUMBER}-${BENCHMARK}.tstamps``.  Here, ``${NUMBER}`` corresponds to the team’s current hardware certification attempt (i.e. ``1``, ``2``, ``3``, ``4``, or ``5``), and ``${BENCHMARK}`` is one of ``hpl``, ``hplmxp``, or ``mlperf`` (e.g. ``cert-1-hpl.tstamps``). Teams can capture these timestamps by running:
 
 	``echo `TZ=America/Chicago date` > cert-${NUMBER}-${BENCHMARK}.tstamps`` immediately before the run, and
 
@@ -48,6 +48,14 @@ The team liaison or another SCC committee member will then inspect the files des
 Judges will determine based on the timestamps for each run whether there is a spike in the power usage of the team that correlates with running the benchmark. Power usage will be checked at 1 second intervals to ensure that teams do not exceed the power budget (maximum of 10kW total for all equipments in the cluster) in order to comply with SCC26 rules.
 
 If all results are valid, the runs have stayed below power limits, and the team has complied with the directions in this document plus any addendums made by the SCC committee, the team’s hardware configuration will be considered certified. If one of these is not met, the configuration will not be considered certified but will still count against a team’s limit of hardware configuration certification attempts.
+
+
+Uploading Results
+~~~~~~~~~~~~~~~~~
+
+After completing the certification and initial benchmark runs, the results will need to be uploaded to the SCC submission server. We will 
+update this documentation with upload instructions once the server is available.
+
 
 .. _Improving benchmark results:
 
