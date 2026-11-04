@@ -6,7 +6,7 @@
 2026 Student Cluster Competition (SCC26) benchmark submission instructions
 ==========================================================================
 
-During the 2026 Student Cluster Competition (SCC26), each team is required to run three core benchmarks (HPL, HPL-MXP, and MLPerf Llama2-70B LoRA). The benchmarks must be run during the benchmarking window of 9:00am--6:00pm CDT on Nov 16 (Mon), 2026, and must be run with the same hardware configuration. All benchmark results must be submitted together following the instructions given below. The benchmark results submission process is also referred to as "hardware certification" in the rest of the document.
+During the 2026 Student Cluster Competition (SCC26), each team is required to run three core benchmarks (HPL, HPL-MXP, and MLPerf Llama2-70B LoRA). The benchmarks must be run during the benchmarking window of 9:00am--6:00pm CST on Nov 16 (Mon), 2026, and must be run with the same hardware configuration. All benchmark results must be submitted together following the instructions given below. The benchmark results submission process is also referred to as "hardware certification" in the rest of the document.
 
 Each team is allowed up to 5 hardware certification submission attempts. The SCC committee may at their discretion increase the allowable number of hardware certification submission attempts. Only one outstanding hardware certification submission attempt will be considered at a time.
 

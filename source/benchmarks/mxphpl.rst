@@ -82,10 +82,10 @@ matching the 4x2 grid in the example output above):
 
 **Files to submit**
 
-- HPL-MXP output saved to a file ``cert-{N}-hplmxp.rslts``
-- HPL-MXP input parameters saved to a file ``cert-{N}-hplmxp.input``
+- HPL-MxP output saved to a file ``cert-{N}-hplmxp.rslts``
+- HPL-MxP input parameters saved to a file ``cert-{N}-hplmxp.input``
 - The script (or commands) used to run HPL-MXP saved to a file ``cert-{N}-hplmxp.run``
-- HPL-MXP run timestamps saved to a file ``cert-{N}-hplmxp.tstamps``
+- HPL-MxP run timestamps saved to a file ``cert-{N}-hplmxp.tstamps``
 
 Example submissions for each file are given below
 
@@ -96,8 +96,6 @@ Example submissions for each file are given below
       .. code-block:: text
          :caption: cert-{N}-hplmxp.rslts
          :linenos:
-
-         [... full HPL-MxP log output; submit the complete, unedited file ...]
 
           ****** HPL MxP Result    ******
 
@@ -121,7 +119,7 @@ Example submissions for each file are given below
          :caption: cert-{N}-hplmxp.input
          :linenos:
 
-         --n 258048 --nb 1024 --nprow 4 --npcol 2 --sloppy-type 2 --gpu-affinity 0:1:2:3
+         --n 258048 --nb 1024 --nprow 4 --npcol 2 --gpu-affinity 0:1:2:3
 
    .. tab-item:: Script
 
@@ -132,7 +130,7 @@ Example submissions for each file are given below
          #!/bin/bash
          NUMBER=1
          # HPL-MxP parameters. NPROW x NPCOL = 4 x 2 = 8 MPI ranks (one per GPU)
-         ARGS="--n 258048 --nb 1024 --nprow 4 --npcol 2 --sloppy-type 2 --gpu-affinity 0:1:2:3"
+         ARGS="--n 258048 --nb 1024 --nprow 4 --npcol 2  --gpu-affinity 0:1:2:3"
 
          # Save input parameters
          echo "${ARGS}" > cert-${NUMBER}-hplmxp.input
