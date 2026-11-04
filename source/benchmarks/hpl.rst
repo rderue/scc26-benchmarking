@@ -69,7 +69,7 @@ HPL reads its parameters from a file named ``HPL.dat`` in the current working di
 The highlighted lines are the parameters that have the largest impact on performance and should be
 tuned first:
 
-- **N** is the problem size, i.e. the order of the matrix :math:`A`. The matrix occupies
+- **N** is the problem size (i.e. the order of the matrix :math:`A`). The matrix occupies
   :math:`8N^2` bytes, so larger N gives better performance up to the limit of available memory. A
   common starting point is an N whose matrix fills roughly 80-90% of the total memory available to HPL.
 - **NB** is the block size used for data distribution and computation. Good values depend on
