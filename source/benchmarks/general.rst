@@ -62,12 +62,12 @@ update this documentation with upload instructions once the server is available.
 Improving benchmark results
 ---------------------------
 
-**After successful completion of a certification attempt**, teams can continue working on specific benchmarks until the end of the benchmarking window (6 PM CDT on 16 Nov, 2026) and upload improved results. Teams can submit newer results of a single benchmark; no need to re-run all the benchmarks. Following rules apply for "benchmark re-submission" **after** a successful certification.
+**After successful completion of a certification attempt**, teams can continue working on specific benchmarks until the end of the benchmarking window (5 PM CST on 16 Nov, 2026) and upload improved results. Teams can submit newer results of a single benchmark; no need to re-run all the benchmarks. Following rules apply for "benchmark re-submission" **after** a successful certification.
 
 1. You must have completed a successful certification of your cluster which has been approved by the SCC committee.
 2. The hardware configuration of the cluster should not be modified and any node of the cluster should not be powered on/off/rebooted since the last successful certification. If either of these conditions is not met, you will be required to re-certify your cluster.
 3. The benchmark runs should not exceed the power limits specified previously. If a team goes over the power limit at any point after the last successful certification, points will be deducted from the team's total.
-4. Submit the updated results for the benchmarks in a **new** directory **before** the benchmarking deadline (6 PM CDT on 16 Nov, 2026). Do NOT overwrite the original certification attempt. Please make sure to include all the required files for the submitted benchmark(s). An example is shown below.
+4. Submit the updated results for the benchmarks in a **new** directory **before** the benchmarking deadline (5 PM CST on 16 Nov, 2026). Do NOT overwrite the original certification attempt. Please make sure to include all the required files for the submitted benchmark(s). An example is shown below.
 
    .. code-block::
 
