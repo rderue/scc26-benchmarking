@@ -19,7 +19,7 @@ A hardware certification submission consists of a team:
 
 3. **In general, teams are expected to use at least 2 nodes for running HPL and HPL-MXP benchmarks, and 1 or more nodes for running MLPerf Inference.** An exception to this rule may be granted if (you have hardware that cannot be physically reconfigured) AND (you have only one node containing GPUs). In this scenario, please contact the SCC26 committee and get approval to use 1 node for HPL and HPL-MXP.
 
-4. Uploading all of the files described above (``cert-*-*.*``, and ``cert-*-configuration.txt``) to the file server designated by the SCC committee. Teams are encouraged to organize their results into separate directories for each benchmark. An example is shown below.
+4. Uploading all of the files described above (``cert-*-*.*``, and ``cert-*-configuration.txt``) to the file server designated by the SCC committee. Teams are encouraged to organize their results into separate directories for each benchmark. An example of the expected file structure is shown below.
 
      .. code-block::
 
@@ -41,6 +41,9 @@ A hardware certification submission consists of a team:
 	    |-- mlperf_submission.tar.gz
 	    `-- mlperf_submission.tstamps
 
+
+The credentials for the file server will be provided to you at the competition, and each team will have their own. When you login to the file server, there will be a symlink named ``submissions`` to a directory at ``/home/data/submissions``. This is where we  expect you to place your results. 
+        
 5. Within 10 minutes of completing the set of benchmark runs, sending one team member to alert the SCC committee (ideally via their team liaison) that they are ready to have their hardware configuration certified (you can do this before the upload is complete).
 
 The team liaison or another SCC committee member will then inspect the files described above to verify that the runs were valid and in conformance with the SCC26 Benchmarking rules. The team liaison or the benchmarking judges will visually inspect and document the team’s cluster hardware configuration and may ask questions to understand the hardware configuration and/or changes from one certification attempt to another. For the result to be valid, all of the team's hardware, including spare replacement machines, must be either in the cluster’s rack or on the table with the rest of the cluster’s hardware. If any hardware is later found that was not visible during certification then the certification will be invalidated. 
@@ -48,14 +51,6 @@ The team liaison or another SCC committee member will then inspect the files des
 Judges will determine based on the timestamps for each run whether there is a spike in the power usage of the team that correlates with running the benchmark. Power usage will be checked at 1 second intervals to ensure that teams do not exceed the power budget (maximum of 10kW total for all equipments in the cluster) in order to comply with SCC26 rules.
 
 If all results are valid, the runs have stayed below power limits, and the team has complied with the directions in this document plus any addendums made by the SCC committee, the team’s hardware configuration will be considered certified. If one of these is not met, the configuration will not be considered certified but will still count against a team’s limit of hardware configuration certification attempts.
-
-
-Uploading Results
-~~~~~~~~~~~~~~~~~
-
-After completing the certification and initial benchmark runs, the results will need to be uploaded to the SCC submission server. We will 
-update this documentation with upload instructions once the server is available.
-
 
 .. _Improving benchmark results:
 
