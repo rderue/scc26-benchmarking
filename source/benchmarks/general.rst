@@ -24,22 +24,21 @@ A hardware certification submission consists of a team:
      .. code-block::
 
 	cert1-submission1/
-	|-- hpl
+	|-- hpl/
 	|   |-- cert-1-configuration.txt
 	|   |-- cert-1-hpl.input
 	|   |-- cert-1-hpl.rslts
 	|   |-- cert-1-hpl.run
 	|   `-- cert-1-hpl.tstamps
-	|-- hplmxp
+	|-- hplmxp/
 	|   |-- cert-1-hplmxp.input
 	|   |-- cert-1-hplmxp.rslts
 	|   |-- cert-1-hplmxp.run
 	|   `-- cert-1-hplmxp.tstamps
-	`-- mlperf
-	    |-- mlperf_submission.md
-	    |-- mlperf_submission.run
-	    |-- mlperf_submission.tar.gz
-	    `-- mlperf_submission.tstamps
+	`-- mlperf/
+	    |-- TEAM_NAME/systems/student_system.json/
+	    |-- TEAM_NAME/benchmarks/llama2_70b_lora/
+	    |-- TEAM_NAME/results/student_system/llama2_70b_lora/
 
 
 The credentials for the file server will be provided to you at the competition, and each team will have their own. When you login to the file server, there will be a symlink named ``submissions`` to a directory at ``/home/data/submissions``. This is where we  expect you to place your results. 
