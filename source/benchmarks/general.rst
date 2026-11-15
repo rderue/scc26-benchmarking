@@ -17,7 +17,7 @@ A hardware certification submission consists of a team:
    - The script used to run the benchmark (or the sequence of commands), copied to a file named like ``cert-${NUMBER}-${BENCHMARK}.run``. 
    - For HPL, The team should also record the information listed under the section :ref:`Configuration file<Configuration file>` below, in a file named like ``cert-${NUMBER}-configuration.txt``. This information is needed to form a valid `top500 submission <https://top500.org/>`_ and must be submitted with the HPL input and results files.
 
-3. **In general, teams are expected to use at least 2 nodes for running HPL and HPL-MXP benchmarks, and 1 or more nodes for running MLPerf Inference.** An exception to this rule may be granted if (you have hardware that cannot be physically reconfigured) AND (you have only one node containing GPUs). In this scenario, please contact the SCC26 committee and get approval to use 1 node for HPL and HPL-MXP.
+3. **In general, teams are expected to use at least 2 nodes for running HPL and HPL-MXP benchmarks, and 1 or more nodes for running MLPerf Training.** An exception to this rule may be granted if (you have hardware that cannot be physically reconfigured) AND (you have only one node containing GPUs). In this scenario, please contact the SCC26 committee and get approval to use 1 node for HPL and HPL-MXP.
 
 4. Uploading all of the files described above (``cert-*-*.*``, and ``cert-*-configuration.txt``) to the file server designated by the SCC committee. Teams are encouraged to organize their results into separate directories for each benchmark. An example of the expected file structure is shown below.
 
@@ -36,7 +36,7 @@ A hardware certification submission consists of a team:
 	|   |-- cert-1-hplmxp.run
 	|   `-- cert-1-hplmxp.tstamps
 	`-- mlperf/
-	    |-- TEAM_NAME/systems/student_system.json/
+	    |-- TEAM_NAME/systems/student_system.json
 	    |-- TEAM_NAME/benchmarks/llama2_70b_lora/
 	    |-- TEAM_NAME/results/student_system/llama2_70b_lora/
 
