@@ -9,7 +9,7 @@ Nvidia HPL-MxP implementation: https://docs.nvidia.com/nvidia-hpc-benchmarks/HPL
 
 AMD HPL-MxP implementation: https://www.amd.com/en/developer/resources/infinity-hub/hpl-mxp.html
 
-An example of the HPL-MXP result output is shown below:
+An example of the HPL-MxP result output is shown below:
 
 .. code-block:: bash
 
@@ -57,6 +57,9 @@ than an ``HPL.dat`` file. The most important parameters mirror those of HPL:
 - **NPROW** and **NPCOL** define the 2D process grid (the equivalent of P and Q in HPL).
   ``NPROW X NPCOL`` must equal the number of MPI ranks launched, which is normally one rank per GPU.
 
+**Note: Some implementations allow a setting to be used that allows the reduced precision portion of the benchmark to be
+ran under FP8 rather than FP16. For this competition, FP16 must be used.**
+
 A minimal run that also captures the files required for submission looks like the following (shown
 for certification attempt ``1`` using the NVIDIA implementation on two nodes with 4 GPUs each,
 matching the 4x2 grid in the example output above):
@@ -84,7 +87,7 @@ matching the 4x2 grid in the example output above):
 
 - HPL-MxP output saved to a file ``cert-{N}-hplmxp.rslts``
 - HPL-MxP input parameters saved to a file ``cert-{N}-hplmxp.input``
-- The script (or commands) used to run HPL-MXP saved to a file ``cert-{N}-hplmxp.run``
+- The script (or commands) used to run HPL-MxP saved to a file ``cert-{N}-hplmxp.run``
 - HPL-MxP run timestamps saved to a file ``cert-{N}-hplmxp.tstamps``
 
 Example submissions for each file are given below
