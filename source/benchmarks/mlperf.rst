@@ -63,7 +63,11 @@ runs are subject to Reference Convergence Points (RCPs) defined in
 `rcps_llama2_70b_lora.json <https://github.com/mlcommons/logging/blob/master/mlperf_logging/rcp_checker/training_6.0.0/rcps_llama2_70b_lora.json>`__.
 Normalization rules apply: implausibly fast runs fail the benchmark
 entirely, credibly fast runs are scaled up, and slow runs receive no
-downward adjustment. ## Hyperparameters, Parallelism, and Precision
+downward adjustment. 
+
+Hyperparameters, Parallelism, and Precision
+-------------------------------------------
+
 Participants have full freedom to adjust unconstrained hyperparameters
 to optimize cluster performance, including peak learning rate
 ``opt_base_learning_rate``, warmup ratio
@@ -74,8 +78,12 @@ to optimize cluster performance, including peak learning rate
 is permitted—including Data Parallelism (DP), Fully Sharded Data
 Parallelism (FSDP), Tensor Parallelism (TP), Pipeline Parallelism (PP),
 and Context Parallelism (CP). Any precision model is allowed (BFloat16
-reference, FP8, or FP4). ## Artifacts to Submit Teams must submit a
-complete package matching the expected folder structure:
+reference, FP8, or FP4). 
+
+Artifacts to Submit
+-------------------
+
+Teams must submit a complete package matching the expected folder structure:
 
 -  ``TEAM_NAME/systems/student_system.json``: Hardware and system
    details.
@@ -85,11 +93,17 @@ complete package matching the expected folder structure:
    result log files (result_0.txt through result_9.txt) and
    scaling.json.
 
-Please submit these artifacts to the repo as a pull request. If you
+In order for these to be considered official submissions exernal to 
+the student cluster competition, please submit these artifacts to the repo
+as a pull request. If you
 cannot create branches in the repo directly, please create a fork of
 this repo and submit a pull request from the fork. And sign the
-automated CLA check so we can merge your code into the repo. ## Run
-Commands and Verification Workflow Ensure MLLOGGER integration emits
+automated CLA check so we can merge your code into the repo.
+
+Run Commands and Verification Workflow
+--------------------------------------
+
+Ensure MLLOGGER integration emits
 machine-readable :::MLLOG JSON events on rank 0 with proper distributed
 barriers. To verify compliance before submission, execute the following
 commands:
